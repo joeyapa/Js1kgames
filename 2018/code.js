@@ -11,10 +11,14 @@
  *  Compress via https://closure-compiler.appspot.com/home
  */ 
 
+setTimeout(function(){
+//var a = document.getElementById('canvas');
+//var b = document.body;
+//var c = a.getContext('2d');
 
-var a = document.getElementById('canvas');
-var b = document.body;
-var c = a.getContext('2d');
+var a = window.a;
+var b = window.b;
+var c = window.c;
 
 var framecount = 0; // delta count for every animation frame
 var component = []; // sprite component container
@@ -156,3 +160,5 @@ b.onmousedown=function(e){
  *
  */
 d();
+
+},1000);
